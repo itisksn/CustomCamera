@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/WidthMatchHeightMatch"
+        android:background="@color/color_white">
+
+        <TextureView
+            android:id="@+id/texture"
+            style="@style/WidthMatchHeightMatch"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_takepicture"
+            style="@style/WidthWrapHeightWrap"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="@string/capture"
+            app:layout_constraintBottom_toBottomOf="@+id/texture"
+            app:layout_constraintEnd_toEndOf="@+id/texture"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/WidthMatchHeightMatch"
+        android:background="@color/color_white">
+
+        <ImageView
+            android:id="@+id/img_preview"
+            style="@style/WidthMatchHeightMatch"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_delete"
+            style="@style/WidthWrapHeightWrap"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="@string/delete"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button_save"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/img_preview" />
+
+        <Button
+            android:id="@+id/button_save"
+            style="@style/WidthWrapHeightWrap"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="@string/save"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/img_preview"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button_delete" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

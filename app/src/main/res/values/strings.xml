@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CustomCameraSample</string>
+    <string name="capture">Capture</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save</string>
+    <string name="camera_permission">Sorry you can not use this app without granting permission.</string>
+    <string name="hardware_camera">You device has not support camera </string>
+    <string name="storage_permission">Without permission you can not save Image.</string>
+    <string name="image_save_successfully">Image saved successfully</string>
+    <string name="capture_screen">Capture Screen</string>
+    <string name="preview_screen">Preview Screen</string>
+</resources>
